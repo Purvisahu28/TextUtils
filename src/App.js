@@ -5,11 +5,12 @@ import Aboutus from './components/Aboutus'
 import Alert from './components/Alert'
 import { useState } from 'react';
 import React from "react";
+//import "bootstrap/dist/js/bootstrap.min.js";
 import {
   BrowserRouter as Main,
   Routes,
   Route,
-  Link
+  
 } from 'react-router-dom';
 
 
@@ -81,9 +82,9 @@ document.title = 'TextUtils-LightMode';
 <div className="container my-5">
 
    <Routes>
-<Route exact path='/about' element={<Aboutus />}></Route>
+<Route exact path='/about' element={<Aboutus mode={mode} />}></Route>
 {/* <Route exact path='/about' element={<AboutUs/>}></Route> */}
-<Route exact path='/' element={<Textform showAlert={showAlert} heading="Enter the text to utilize" mode={mode} />}></Route>
+<Route exact path='/' element={<Textform showAlert={showAlert} heading="Try TextUtils-Word counter,character counter,remove extra spaces" mode={mode} />}></Route>
    </Routes>
    </div>
    </Main>

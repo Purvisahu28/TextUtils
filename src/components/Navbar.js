@@ -13,7 +13,7 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link " aria-current="page" to="/">Home</Link>
         </li>
         {/* <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/textform">Textform</Link>
@@ -33,7 +33,8 @@ export default function Navbar(props) {
           </ul>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/about">About</Link>
+          {/* //"nav-lik active" then vo hamesha highlighted rahega */}
+        <Link className="nav-link " aria-current="page" to="/about">About</Link>
         </li>
       </ul>
       <form className="d-flex" role="search">
